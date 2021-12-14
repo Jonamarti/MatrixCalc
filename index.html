@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Matrix calculator </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="jquery-3.0.0.js"></script>
+	<script>
+		// Changes the width of every input field to match their value
+		$("document").ready(function () {
+
+			$("input").each(function () {
+
+				$(this).attr('size', $(this).attr('value').length);
+
+			}
+
+
+
+			);
+
+		});
+
+	</script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div>
+		<fieldset>
+			<legend>Playground</legend>
+			<table id="t1">
+				<tr>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=0
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value=17778765454
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=0
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value=0
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+			</table>
+
+			<table id="t2">
+				<tr>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+
+				<tr>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+
+			</table>
+
+			<table id="t3">
+				<tr>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+
+				<tr>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+					<td><input type="text" value=1
+							onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" /></td>
+				</tr>
+			</table>
+
+		</fieldset>
+		<div>
+
+			<button id="Addition button">
+				Add
+			</button>
+
+			<button id="Multiplication button">
+				Multiply
+			</button>
+
+			<button id="First matrix determinant button">
+				1st Determinant
+			</button>
+
+			<button id="Second matrix determinant">
+				2nd Determinant
+			</button>
+
+			<button id="Clear first matrix">
+				Clear first matrix
+			</button>
+
+			<button id="Clear second matrix">
+				Clear second matrix
+			</button>
+
+			<button id="Identity first matrix">
+				Identity first matrix
+			</button>
+
+			<button id="Identity second matrix">
+				Identity second matrix
+			</button>
+
+			<button id="C to A">
+				Copy C into A
+			</button>
+
+			<button id="B to A">
+				Copy B into A
+			</button>
+
+			<button id="A to B">
+				Copy A into B
+			</button>
+
+			<button id="C to B">
+				Copy C into B
+			</button>
+
+			<button id="Add row to A">
+				Add row to A
+			</button>
+
+			<button id="Add col to A">
+				Add col to A
+			</button>
+
+			<button id="Add row to B">
+				Add row to B
+			</button>
+
+			<button id="Add col to B">
+				Add col to B
+			</button>
+
+			<button id="Delete row from A">
+				Delete row from A
+			</button>
+
+			<button id="Delete col from A">
+				Delete col from A
+			</button>
+
+			<button id="Delete row from B">
+				Delete row from B
+			</button>
+
+			<button id="Delete col from B">
+				Delete col from B
+			</button>
+
+			<button id="Traspose A">
+				Traspose A
+			</button>
+
+			<button id="Traspose B">
+				Traspose B
+			</button>
+
+			<button id="Rotate A">
+				Rotate A 90
+			</button>
+
+		</div>
+	</div>
+
+</body>
+
+</html>
