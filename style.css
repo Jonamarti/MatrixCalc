@@ -1,47 +1,90 @@
-
+body {
+	height: 100%;
+}
 
 td {
 	padding: 5px;
 }
-  
-  table {
-	  
-	  border:3px solid;
-	  margin: 10px;
-	  border-radius: 10px;
-  
-  }
-  
-  table, tr, td {
-	  border-collapse:collapse;
-  }
-  
-  fieldset{
-	  flex: content;
-	  display:flex;
-	  flex-wrap: wrap;
-	  margin-bottom: 10px;
-  }
-  legend{
-	  margin-left:auto;
-	  margin-right:auto;
-  }
 
-  #t1{
+table {
+
+	border: 3px solid;
+	margin: 10px;
+	border-radius: 10px;
+
+}
+
+table, tr, td {
+	border-collapse: collapse;
+}
+
+fieldset {
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+legend {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.firstTable {
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+	flex-grow: 1;
+}
+
+.firstTable>div {
+	display: flex;
+	flex-direction: inherit;
+}
+
+.secondTable {
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+	flex-grow: 1;
+}
+
+.secondTable>div {
+	display: flex;
+	flex-direction: inherit;
+	width: 30%
+}
+
+#t1 {
 	border-color: aquamarine;
-  }
+	/* position:absolute; */
+	/* top:10%; */
+}
 
-  #t2{
- 	border-color: greenyellow;
-  }
+#t2 {
+	border-color: greenyellow;
+	/* position:absolute; */
+	/* top: 10%;
+	 right:10%; */
 
-  #t3{
-	  margin-left: auto;
-	  margin-right: auto;
-	  border-color: aliceblue;
-  }
+}
 
-  input{
-	  align-content: flex-start;
-  }
+#t3 {
+	margin: auto;
+	border-color: aliceblue;
+}
 
+
+
+button {
+	background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 90%));
+	border: 2px silver;
+	border-radius: 5px;
+
+}
+
+.optDiv {
+	display: flex;
+	flex-direction: column;
+	flex-grow:1;
+}
